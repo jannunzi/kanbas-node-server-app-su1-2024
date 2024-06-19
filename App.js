@@ -6,6 +6,7 @@ import CourseRoutes from "./Kanbas/courses/routes.js";
 import ModuleRoutes from "./Kanbas/Modules/routes.js";
 import cors from "cors";
 import UserRoutes from "./User/routes.js";
+import EnrollmentRoutes from "./Kanbas/Enrollments/routes.js";
 import mongoose from "mongoose";
 
 const CONNECTION_STRING =
@@ -45,5 +46,6 @@ Lab5(app);
 CourseRoutes(app);
 ModuleRoutes(app);
 UserRoutes(app);
+EnrollmentRoutes(app);
 
 app.listen(process.env.PORT || 4000);
